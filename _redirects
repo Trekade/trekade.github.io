@@ -1,0 +1,13 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect domain aliases to primary domain
+https://trekade.de/* https://www.treka.de/:splat 301!
+https://www.trekade.com/* https://www.treka.de/:splat 301!
+https://trekade.com/* https://www.treka.de/:splat 301!
+https://www.trekade.net/* https://www.treka.de/:splat 301!
+https://trekade.net/* https://www.treka.de/:splat 301!
+https://www.trekade.org/* https://www.treka.de/:splat 301!
+https://trekade.org/* https://www.treka.de/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://trekade.netlify.com/* https://www.treka.de/:splat 301!
