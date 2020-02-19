@@ -11,3 +11,4 @@ https://trekade.org/* https://www.treka.de/:splat 301!
 
 # Optional: Redirect default Netlify subdomain to primary domain
 https://trekade.netlify.com/* https://www.treka.de/:splat 301!
+
