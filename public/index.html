@@ -80,7 +80,7 @@
 							'Content-Type': 'application/json',
 							Accept: 'application/json'
 						},
-						body: JSON.stringify({ name: $('form[name="name"]').val(), email: $('form[name="email"]').val(), msg: $('form[name="msg"]').val() })
+						body: JSON.stringify({ name: $('form [name="name"]').val().trim(), email: $('form [name="email"]').val().trim(), msg: $('form [name="msg"]').val().trim() })
 					})
 					.then((response) => {
 						if (response.status < 299) {
