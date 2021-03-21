@@ -86,7 +86,10 @@
 						if (response.status < 299) {
 							$('form .alert').removeClass('alert-danger d-none').addClass('alert-success').html("Thanks! You will hear back from us soon.");
 						} else {
-							$('form .alert').addClass('alert-danger').removeClass('alert-success d-none').html("ahhhh");
+							$('form .alert').addClass('alert-danger').removeClass('alert-success d-none');
+							response.text().then(function(text) {
+								$('form .alert').html(text);
+							});
 						}
 					})
 				});

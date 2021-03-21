@@ -46,7 +46,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func SendMail(f Feedback) (res int, out string, err error) {
-	client := postmark.NewClient("e92bacac-f491-4a18-aafb-652cc31b0790", "")
+	client := postmark.NewClient(os.Getenv("POSTMARK_SERVER_KEY"), "")
 	email := postmark.Email{
 		From: "no-reply@trekade.com",
 		To: "daniel@trekade.com",
