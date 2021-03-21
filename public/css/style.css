@@ -1,9 +1,9 @@
 
 	html,body { height: 100vh; }
-	body { background: #062131; margin: 0; padding: 0; color: #fff; }
+	body { background: #062131;  }
 	#triangles { z-index: -1; position: fixed; top: 0; left: 0; }
 	.cover-container {  }
-	main { width: 90vw; max-width: 500px; min-width: 320px; }
+	main { width: 90vw; max-width: 500px; min-width: 320px; margin: 0; padding: 0; color: #fff; }
 	hr { background-color: rgba(49,81,143,0.5); max-width: 70%; }
 	.card { background: rgba(0,0,0,0.3); border: none; }
 	.card-img-top { max-width: 70%; }
