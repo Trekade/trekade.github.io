@@ -3,7 +3,6 @@ package handler
 import (
 	"encoding/json"
 	"net/http"
-	"os"
 
 	"github.com/keighl/postmark"
 )
@@ -29,7 +28,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if fb.Name = "" || fb.Email = "" || fb.Msg = "" {
+	if fb.Name == "" || fb.Email == "" || fb.Msg == "" {
 		http.Error(w, "Not all fields filled out", http.StatusBadRequest)
 		return
 	}
@@ -53,7 +52,7 @@ func SendMail(f Feedback) (res int, out string, err error) {
 		To: "daniel@trekade.com",
 		Subject: "[trekade.com] Contact Form",
 		HtmlBody: f.Msg+"<br>"+f.Name+"<br>"+f.Email,
-	    TextBody: f.Msg+"\n"+f.Name+"\n"+f.Email
+	    TextBody: f.Msg+"\n"+f.Name+"\n"+f.Email,
 	}
 
 	_, err = client.SendEmail(email)
