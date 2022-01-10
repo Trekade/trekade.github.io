@@ -1,12 +1,13 @@
 
-	html,body { height: 100vh; }
+	html,body { height: 100vh; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 	body { background: #062131;  }
 	#triangles { z-index: -1; position: fixed; top: 0; left: 0; }
 	.cover-container {  }
-	main { width: 90vw; max-width: 500px; min-width: 320px; margin: 0; padding: 0; color: #fff; }
+	main { width: 90vw; max-width: 1000px; min-width: 320px; margin: 0; padding: 0; color: #fff; }
 	hr { background-color: rgba(49,81,143,0.5); max-width: 70%; }
 	.card { background: rgba(0,0,0,0.3); border: none; }
 	.card-img-top { max-width: 70%; }
 	.btn-primary { background: rgba(0,0,0,0.5); border-color: rgba(49,81,143,0.5); }
 	.btn-primary:hover { background: rgba(49,81,143,0.5); border-color: rgba(49,81,143,0.5); }
 	h1.display-4 { font-size: 3rem; }
+	svg { fill: currentColor; }
